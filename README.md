@@ -10,7 +10,7 @@ Note: My exams are starting so I am going to continue working on this after my e
 #### Linux/Mac
 For Debian based OS-
 If you don't have python or pip installed 
-cd ~/Downloads;wget https://raw.githubusercontent.com/AvanindraC/RSB/install.sh; sudo bash install.sh
+cd ~/Downloads;wget https://raw.githubusercontent.com/AvanindraC/RSB/blob/main/install.sh; sudo bash install.sh
 If you have python installed
 pip3 install rsbcli
 
