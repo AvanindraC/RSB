@@ -1,9 +1,23 @@
 [tool.poetry]
 name = "rsbcli"
-version = "0.1.0"
+version = "0.1.1"
 description = "A RAM saving cli to run web applications"
-authors = ["Avanindra Chakraborty, Arghya Sarkar"]
+authors = ["Avanindra Chakraborty<avanindra.d2.chakraborty@gmail.com>"]
 license = "MIT"
+readme="README.md"
+homepage= "https://github.com/AvanindraC/RSB"
+repository = "https://github.com/AvanindraC/RSB"
+keywords = ["RSBCLI"]
+
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Operating System :: OS Independent",
+    ]
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -12,6 +26,10 @@ PyQt5 = "^5.15.4"
 PyQtWebEngine = "^5.15.4"
 
 [tool.poetry.dev-dependencies]
+
+
+[tool.poetry.scripts]
+rcb = "RSBCLI:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
