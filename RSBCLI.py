@@ -40,4 +40,5 @@ def open(url):
     sys.exit(application.exec_())
 if __name__ == "__main__":
     main()
-    open()
+    
+    
