@@ -8,4 +8,4 @@ sudo apt install wget
 sudo apt install curl
 sudo apt install gdebi
 
-pip3 install lolacli
+pip3 install rsbcli
