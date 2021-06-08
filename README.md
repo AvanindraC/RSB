@@ -30,10 +30,9 @@ pip install rsbcli
 
 #### Windows 
 Open powershell and type rsb
-![image](https://user-images.githubusercontent.com/77975448/120934300-6ce62a80-c71b-11eb-940e-60c55ade5413.png)
 
 Then type rsb open enter url here
- ![image](https://user-images.githubusercontent.com/77975448/120934319-84251800-c71b-11eb-9336-8b0857790bf3.png)
+
   
 #### Linux/Mac
 Open terminal and type rsb
