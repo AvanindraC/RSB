@@ -2,9 +2,9 @@
 
 ## A RAM saving cli to run web applications
 ### https://pypi.org/project/rsbcli/
-### Version 0.1.3 
+### Version 0.2.0
 
-RCB Changed to RSB 
+Updated the help function 
 
 
 #### PS: I am aware of some bugs but I will fix them after my exams
