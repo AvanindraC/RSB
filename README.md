@@ -6,7 +6,7 @@
 
 ### Version 0.2.5
 
-## Whats New: Now you can download files from RSB and has some preset websites to open 
+## Whats New: Now you can download files from RSB and has some preset websites to open. If you click a download link, it downloads in the background but doesn't say anything 
 
 ## Installation
 
