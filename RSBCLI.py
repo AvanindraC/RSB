@@ -34,46 +34,12 @@ class WebEnginePage(QWebEnginePage):
             self.setFeaturePermission(url, feature, QWebEnginePage.PermissionGrantedByUser)
         else:
             self.setFeaturePermission(url, feature, QWebEnginePage.PermissionDeniedByUser)
-    def _downloadRequested(item): # QWebEngineDownloadItem
-        print('downloading to', item.path())
-        item.accept()
+def _downloadRequested(item): # QWebEngineDownloadItem
+    print('downloading to', item.path())
+    item.accept()
 
-class WebEnginePageFS(QWebEnginePage):
-    def __init__(self, *args, **kwargs):
-        QWebEnginePage.__init__(self, *args, **kwargs)
-        self.featurePermissionRequested.connect(self.onFeaturePermissionRequested)
-        
-        
-    def onFeaturePermissionRequested(self, url, feature):
-        if feature in (QWebEnginePage.MediaAudioCapture, 
-            QWebEnginePage.MediaVideoCapture, 
-            QWebEnginePage.MediaAudioVideoCapture):
-            self.setFeaturePermission(url, feature, QWebEnginePage.PermissionGrantedByUser)
-        else:
-            self.setFeaturePermission(url, feature, QWebEnginePage.PermissionDeniedByUser)
-    def _downloadRequested(item): # QWebEngineDownloadItem
-        print('downloading to', item.path())
-        item.accept()
-    def UiComponents(self):
-  
-        # creating label
-        label = QLabel("R S B", self)
-  
-        # setting geometry to label
-        label.setGeometry(100, 100, 120, 40)
-  
-        # adding border to label
-        label.setStyleSheet("border : 2px solid black")
-  
-        # opening window in maximized size
-        self.showMaximized()
-def _downloadRequested(item): # QWebEngineDownloadItem
-    print('downloading to', item.path())
-    item.accept()
-def _downloadRequested(item): # QWebEngineDownloadItem
-    print('downloading to', item.path())
-    item.accept()
-     
+
+
 application= QApplication(sys.argv)
 
 @click.group()
