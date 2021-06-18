@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rsbcli"
-version = "0.2.2"
-description = "A RAM saving cli to run web applications. Update 0.2.2: Nothing major "
+version = "0.2.5"
+description = "A RAM saving cli to run web applications. Update 0.2.5: Added presets. Now you can type the name of certain websites to open them in RSB. Downloads and fullscreen too "
 authors = ["Avanindra Chakraborty <avanindra.d2.chakraborty@gmail.com>"]
 license = "MIT"
 readme="README.md"
