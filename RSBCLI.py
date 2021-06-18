@@ -16,8 +16,8 @@ urls = {
     'gmail': "https://www.gmail.com/",
     'spotify': "https://spotify.com",
     'udemy': "https://www.udemy.com",
-    'linuxmint': "https://linuxmint.com/",
-    'dogemeet': "https://doge-meet-demo.up.railway.app/"
+    'linuxmint': "https://linuxmint.com/"
+
 }
 
 
