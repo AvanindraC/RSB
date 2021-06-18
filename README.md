@@ -1,51 +1,68 @@
 # RSB
 
 ## A RAM saving cli to run web applications
+
 ### https://pypi.org/project/rsbcli/
-### Version 0.2.0
 
-Updated the help function 
+### Version 0.2.5
 
+## Whats New: Now you can download files from RSB and has some preset websites to open 
 
-#### PS: I am aware of some bugs but I will fix them after my exams
+## Installation
 
-### How to install
-Note: My exams are starting so I am going to continue working on this after my exams
+### Linux
+
+#### For Debian based OS
+
+Paste this in your terminal 
+```cd ~/Downloads;wget https://raw.githubusercontent.com/AvanindraC/RSB/master/install.sh; sudo bash install.sh```
+
+#### For all Linux distros and Mac
+
+```pip3 install rsbcli```
+
+### Windows
+
+```pip install rsbcli``` 
+
+## How to use
+
+### Windows
+
+Open powershell and type ```rsb```
+
+#### To open a website regularly:
+
+Type ```rsb open (Enter your url)```
+
+#### To open a preset website 
+
+Type ```rsb open_pre (keyword)```
+
+#### To see the preset keywords
+
+Type ```rsb presets```
+
 #### Linux/Mac
-For Debian based OS-
 
-If you don't have python or pip installed 
+Open the terminal and type ```rsb```
 
-cd ~/Downloads;wget https://raw.githubusercontent.com/AvanindraC/RSB/blob/main/install.sh; sudo bash install.sh
+#### To open a website regularly:
 
-If you have python installed
+Type ```rsb open (Enter your url)```
 
-pip3 install rsbcli
+#### To open a preset website 
 
-#### Windows
-pip install rsbcli
-![image](https://user-images.githubusercontent.com/77975448/120934183-edf0f200-c71a-11eb-93d0-afae8c8b739d.png)
+Type ```rsb open_pre (keyword)```
 
-###How to use
+#### To see the preset keywords
 
-#### Windows 
-Open powershell and type rsb
+Type ```rsb presets```### Softwares used
 
-Then type rsb open enter url here
-
-  
-#### Linux/Mac
-Open terminal and type rsb
-  
-Then type rsb open enter url here
-
-
-
-Softwares used
+## Developer Tools
 
 Visual Studio Code - https://github.com/Microsoft/vscode
 
 Python 3.9.1
 
 Special Thanks to https://github.com/arghyagod-coder
-
