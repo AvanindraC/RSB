@@ -5,6 +5,7 @@ from PyQt5.QtWebEngineWidgets import *
 import sys
 import click
 
+msg = QMessageBox()
 urls = {
     'github': "https://github.com/" ,
     'youtube': "https://youtube.com",
@@ -16,8 +17,22 @@ urls = {
     'gmail': "https://www.gmail.com/",
     'spotify': "https://spotify.com",
     'udemy': "https://www.udemy.com",
-    'linuxmint': "https://linuxmint.com/"
-
+    'linuxmint': "https://linuxmint.com/",
+    'dogemeet': "https://doge-meet-demo.up.railway.app/",
+    'google':"https://google.com",
+    'duckduckgo': "https://duckduckgo.com",
+    'titanurl':"https://titul.herokuapp.com/",
+    'lolacli':"http://lolacli.herokuapp.com",
+    'whatsapp-web':"https://web.whatsapp.com/",
+    'netflix':"https://netflix.com/",
+    'prime':"https://primevideo.com/",
+    'disney+':"https://disneyplus.com/",
+    'amazon':"https://amazon.com/",
+    'pdfdrive':"https://pdfdrive.com/",
+    'duolingo':"https://www.duolingo.com/",
+    'wikipedia':"https://wikipedia.org/",
+    'facebook':"https://facebook.com/",
+    'instagram':"https://instagram.com/"
 }
 
 
@@ -33,17 +48,20 @@ class WebEnginePage(QWebEnginePage):
             QWebEnginePage.MediaAudioVideoCapture):
             self.setFeaturePermission(url, feature, QWebEnginePage.PermissionGrantedByUser)
         else:
+            
             self.setFeaturePermission(url, feature, QWebEnginePage.PermissionDeniedByUser)
+
 def _downloadRequested(item): # QWebEngineDownloadItem
     print('downloading to', item.path())
     item.accept()
-
-
-
+    msg.setWindowTitle("Downloading")
+    msg.setText("Downloading file...") 
+    msg.setIcon(QMessageBox.Information)
+    x = msg.exec_()  
 application= QApplication(sys.argv)
 
 @click.group()
-@click.version_option('0.2.5')
+@click.version_option('0.3.0')
 def main():
     """RSB - webpages in GUI VIEW"""
     pass
