@@ -4,7 +4,6 @@ from PyQt5.QtGui import *
 from PyQt5.QtWebEngineWidgets import *
 import sys
 import click
-import re
 
 msg = QMessageBox()
 urls = {
@@ -72,9 +71,6 @@ def main():
 @main.command('open', help= '"rsb open <url>" opens your desired URL in RSB window' )
 @click.argument('url', nargs=1)
 def open(url):
-    if len(re.findall(r"[http|https|ftp|ftps]://\w", url)) == 0:
-        print("The URL entered is not valid.")
-        return
     
     webpage = WebEnginePage()
     webengine= QWebEngineView()
